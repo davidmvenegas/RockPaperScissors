@@ -10,20 +10,32 @@
 </head>
 <body>
     <header class="header">
-        <h1>Rock Paper Scissors Game</h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
     <div class="container">
-        <div class="score-container">
-            <span class="user">YOU</span>
+        <div class="score-container center">
+            <span class="score-item user center">YOU</span>
             <span id="score">0 - 0</span>
-            <span class="computer">COMPUTER</span>
+            <span class="score-item computer center">COMPUTER</span>
         </div>
         <div class="buttons">
-            <button class="bn" onclick="" value=""><i class="far fa-hand-paper"></i></button>
-            <button class="bn" onclick="" value=""><i class="far fa-hand-rock"></i></button>
-            <button class="bn" onclick="" value=""><i class="far fa-hand-scissors"></i></button>
+            <button class="bn" onclick="play(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+            <button class="bn" onclick="play(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+            <button class="bn" onclick="play(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+        </div>
+        <div id="challenge">
+            <div class="challenge-result" id="yourChoice-wrapper">
+                <div class="center" id="yourChoice"></div>
+                <p>You</p>
+            </div>
+            <div class="center" id="result"></div>
+            <div class="challenge-result" id="computerChoice-wrapper">
+                <div class="center" id="computerChoice"></div>
+                <p>Computer</p>
+            </div>
         </div>
     </div>
+    <p class="footer">Made with love by <a href="https://github.com/davidmvenegas" target="_blank">David Venegas</a></p>
 
     <script src="./index.js"></script>
 </body>
