@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <h1>Rock Paper Scissors</h1>
+        <h1 id="title">Rock Paper Scissors</h1>
     </header>
     <div class="container">
         <div class="score-container center">
@@ -24,18 +24,19 @@
             <button class="bn" onclick="play(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
         </div>
         <div id="challenge">
-            <div class="challenge-result" id="yourChoice-wrapper">
+            <div class="challenge-result-left" id="yourChoice-wrapper">
                 <div class="center" id="yourChoice"></div>
                 <p>You</p>
             </div>
             <div class="center" id="result"></div>
-            <div class="challenge-result" id="computerChoice-wrapper">
+            <div class="challenge-result-right" id="computerChoice-wrapper">
                 <div class="center" id="computerChoice"></div>
                 <p>Computer</p>
             </div>
         </div>
+        <button id="resetScoreButton">Reset Score</button>
     </div>
-    <p class="footer">Made with love by <a href="https://github.com/davidmvenegas" target="_blank">David Venegas</a></p>
+    <p id="footer">Built with &#10084; by <a href="https://www.davidmvenegas.com" target="_blank" rel="noopener noreferrer">David Venegas</a></p>
 
     <script src="./index.js"></script>
 </body>
