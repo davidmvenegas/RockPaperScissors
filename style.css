@@ -222,11 +222,15 @@ body {
     .buttons {
         position: absolute;
         width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .bn {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
         font-size: 35px;
+        text-align: center;
     }
     #responseIcon {
         font-size: 3.5rem;
